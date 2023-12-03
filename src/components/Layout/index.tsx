@@ -4,17 +4,12 @@ import { useParams } from "react-router-dom";
 import { Typography } from "antd";
 const Wrap = styled.div``;
 
-const Container = styled.div`
-  margin: 0 auto;
-  max-width: min(900px, 95vh);
-`;
-
-export default function Layout({ children }: { children: ReactNode }) {
+export default function DayLayout({ children }: { children: ReactNode }) {
   const { day } = useParams();
   return (
     <Wrap>
-      <Typography.Title>Day {day}</Typography.Title>
-      <Container>{children}</Container>
+      <Typography.Title level={2}>Day {day}</Typography.Title>
+      {children}
     </Wrap>
   );
 }

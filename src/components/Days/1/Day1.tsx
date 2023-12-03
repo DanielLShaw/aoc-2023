@@ -1,5 +1,5 @@
 import { Input, Form, Button, Space, Typography, Statistic } from "antd";
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback } from "react";
 import getLines from "../../../utils/string.utils";
 import { input } from "./input";
 export default function Day1() {
@@ -71,7 +71,7 @@ export default function Day1() {
 
   return (
     <div>
-      <Typography.Title level={2}>Part 1</Typography.Title>
+      <Typography.Title level={3}>Part 1</Typography.Title>
       <p>
         The newly-improved calibration document consists of lines of text; each
         line originally contained a specific calibration value that the Elves
@@ -86,7 +86,7 @@ export default function Day1() {
         document. What is the sum of all of the calibration values?
       </p>
 
-      <Typography.Title level={2}>Part 2</Typography.Title>
+      <Typography.Title level={3}>Part 2</Typography.Title>
 
       <p>
         Your calculation isn't quite right. It looks like some of the digits are
